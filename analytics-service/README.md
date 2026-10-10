@@ -270,7 +270,7 @@ Jika Sales Service belum mendukung pagination (response tanpa field `page`), Ana
 
 ## 6. Konfigurasi
 
-Salin `env` menjadi `.env`, lalu isi:
+Salin `.env.example` menjadi `.env`, lalu isi:
 
 ```
 CI_ENVIRONMENT = development

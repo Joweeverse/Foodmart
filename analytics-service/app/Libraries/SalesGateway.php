@@ -41,8 +41,10 @@ class SalesGateway
                 ];
             }
 
-            if (! isset($json['page'])) break;          // Sales belum mendukung pagination
-            if (count($batch) < $cfg->pageSize) break;  // halaman terakhir
+            if (! isset($json['page'])) break;                  // Sales belum mendukung pagination
+                $size = (int) ($json['limit'] ?? $cfg->pageSize);    // batas limit yang benar-benar dipakai Sales
+            if (count($batch) < $size) break;                   // halaman terakhir
+            if (isset($json['total']) && count($rows) >= (int) $json['total']) break;
         }
         return $rows;
     }
