@@ -1,0 +1,11 @@
+.env
+*.log
+.vscode/
+.idea/
+mock-services/data.json
+mock-services/nopage.flag
+analytics-service/writable/cache/*
+analytics-service/writable/logs/*
+analytics-service/writable/session/*
+analytics-service/writable/debugbar/*
+!analytics-service/writable/**/index.html

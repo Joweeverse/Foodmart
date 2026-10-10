@@ -1,0 +1,9 @@
+<p> Menu :
+<a href="/">Dashboard</a> |
+<a href="/about">About</a> |
+<a href="/blog">Blog</a> |
+<a href="/foodmart">Foodmart</a> </p>
+<a href="/foodmartAPI" target='blank'>FoodmartAPI</a>
+<a href="/news">News</a> |
+<a href="/report">Report</a> |
+<a href="/logout">Logout</a> </p>
